@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+}
+
+/* Background */
+body{
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form-box */
+.form-box{
+    background: #ffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* Form */
+form {
+    margin-bottom: 28px;
+}
+
+
+form:last-child {
+    margin-bottom: 0px;
+}
+
+/* Heading */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input */
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    border-radius: 6px;
+    border: 2px solid #ccc;
+}
+
+/* Button */
+form button {
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #5a67d8;
+}
+
+/* Divider between forms */
+form + form {
+    border-top: 8px solid #eee;
+    padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .form-box {
+        padding: 20px;
+    }
+}
